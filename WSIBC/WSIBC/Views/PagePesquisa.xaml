@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WSIBC.Views.PagePesquisa" Title="Pesquisa">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Nome:"/>
+            <Entry x:Name="txtNome" Placeholder="Digite seu Nome"/>
+            <Label Text="1 - Qual o seu nível de satisfação com o ambiente de trabalho hoje?"/>
+            <Slider x:Name="slPergunta1" ValueChanged="slPergunta1_ValueChanged" 
+                    Maximum="10" 
+                    Minimum="1" 
+                    Value="1"
+                    MaximumTrackColor="Yellow"
+                    MinimumTrackColor="Black"/>
+            <Label x:Name="txtPergunta1" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+            
+            <Label Text="2 - Atualmente, o Ambiente de trabalho atende às suas expectativas?"/>
+            <Slider x:Name="slPergunta2" ValueChanged="slPergunta2_ValueChanged"
+                    Maximum="10" 
+                    Minimum="1" 
+                    Value="1"
+                    MaximumTrackColor="Yellow"
+                    MinimumTrackColor="Black"/>
+            <Label x:Name="txtPergunta2" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+            
+            <Label Text="3 - Quão Próximo do ideal está seu ambiente de trabalho?"/>
+            <Slider x:Name="slPergunta3" ValueChanged="slPergunta3_ValueChanged" 
+                    Maximum="10" 
+                    Minimum="1" 
+                    Value="1"
+                    MaximumTrackColor="Yellow"
+                    MinimumTrackColor="Black"/>
+            <Label x:Name="txtPergunta3" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+
+            <Button Text="Encerrar Pesquisa" BackgroundColor="GreenYellow" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Clicked="Button_Clicked"/>
+
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

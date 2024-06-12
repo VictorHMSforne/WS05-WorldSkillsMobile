@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WSIBC.Views.PageHome" Title="Pesquisa IBC - Índice de Bem Estar">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Image Source="IBC" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="10"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnPesquisar" Text="Pesquisar" BackgroundColor="#ffcb00" TextColor="White" CornerRadius="15" FontAttributes="Bold" Clicked="btnPesquisar_Clicked"/>
+                <Button x:Name="btnSair" Text="Sair" BackgroundColor="#ff462e" TextColor="White" CornerRadius="15" FontAttributes="Bold" Clicked="btnSair_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WSIBC.Views.PageResultado" Title="Resultado">
+    <ContentPage.Content>
+        <StackLayout Margin="15">
+            <Label x:Name="txtNome" HorizontalOptions="Center" FontSize="20"/>
+            <Label Text="Resultado" VerticalOptions="Center" HorizontalOptions="Center"    
+                   FontAttributes="Bold" FontSize="40"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="txtResultado" FontSize="45" FontAttributes="Bold" TextColor="Cyan" />
+                <Label Text="%" FontSize="45" FontAttributes="Bold" TextColor="Cyan" />
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
